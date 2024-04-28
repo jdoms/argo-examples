@@ -49,7 +49,7 @@ metadata:
   namespace: app-test-1
 spec:
   rules:
-  - host: "app-test-1.Johans-MacBook-Pro.local"
+  - host: "app-test-1.johans-macBook-pro.local"
     http:
       paths:
       - path: /
