@@ -1,6 +1,15 @@
+appName: myhelmapp
 
-replicas: 5
+port: 80
 
 configmap:
+  name: myhelmapp-configmap-v1
   data:
-    CUSTOM_HEADER: 'This is on the DEV environment!'
+    CUSTOM_HEADER: 'This app was deployed with helm! This is on the DEV environment!'
+
+image:
+  name: devopsjourney1/mywebapp
+  tag: latest
+  
+replicas: 5
+
